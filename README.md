@@ -1,5 +1,7 @@
 # SmartWallLights
 
+[Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3782121141)
+
 ## Русский
 
 SmartWallLights - мод для RimWorld 1.6, который помогает быстро расставлять настенные светильники в комнате.
