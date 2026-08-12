@@ -1,0 +1,11 @@
+/.vscode/obj/
+/.vs/
+/bin/
+/obj/
+/*.sln
+/*.user
+/*.csproj.user
+/*/Assemblies/*.pdb
+WorkshopDescription.txt
+Thumbs.db
+Desktop.ini

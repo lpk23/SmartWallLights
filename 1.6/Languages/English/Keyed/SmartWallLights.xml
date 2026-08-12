@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SmartWallLights.DesignatorLabel>Auto-place wall lights</SmartWallLights.DesignatorLabel>
+  <SmartWallLights.DesignatorDesc>Click inside a closed room to place an efficient set of wall light blueprints along its walls. You can also hold Shift while placing a supported wall light on a room wall.</SmartWallLights.DesignatorDesc>
+  <SmartWallLights.NoWallLampDef>SmartWallLights could not find a supported wall light definition.</SmartWallLights.NoWallLampDef>
+  <SmartWallLights.NoRoom>Click inside a closed room.</SmartWallLights.NoRoom>
+  <SmartWallLights.RoomTooSmall>This room is too small for automatic wall-light placement.</SmartWallLights.RoomTooSmall>
+  <SmartWallLights.NoCandidates>No valid wall cells for wall lights were found in this room.</SmartWallLights.NoCandidates>
+  <SmartWallLights.NothingToPlace>This room already appears to be covered by wall lights.</SmartWallLights.NothingToPlace>
+  <SmartWallLights.Placed>Placed {0} wall light(s).</SmartWallLights.Placed>
+  <SmartWallLights.Partial>Placed {0} wall light(s), but {1} room cell(s) could not be covered from valid wall positions.</SmartWallLights.Partial>
+  <SmartWallLights.Settings.Mode>Placement mode</SmartWallLights.Settings.Mode>
+  <SmartWallLights.Settings.ModeEfficient>Efficient: balanced coverage by wall segments</SmartWallLights.Settings.ModeEfficient>
+  <SmartWallLights.Settings.ModeFullSymmetry>Full symmetry: opposite wall lamps face each other</SmartWallLights.Settings.ModeFullSymmetry>
+  <SmartWallLights.Settings.ModeHybrid>Hybrid: symmetric pairs first, efficient fill for dark cells</SmartWallLights.Settings.ModeHybrid>
+  <SmartWallLights.Settings.DoorAvoidance>Door clearance: {0} cells</SmartWallLights.Settings.DoorAvoidance>
+  <SmartWallLights.Settings.MinSpacing>Minimum lamp spacing: {0} cells</SmartWallLights.Settings.MinSpacing>
+  <SmartWallLights.Settings.DebugLogging>Write debug logs</SmartWallLights.Settings.DebugLogging>
+  <SmartWallLights.Settings.Reset>Reset to defaults</SmartWallLights.Settings.Reset>
+</LanguageData>

@@ -1,0 +1,61 @@
+name: Package release
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    name: Package mod zip
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set version
+        id: version
+        shell: bash
+        run: |
+          if [[ "${GITHUB_REF_TYPE}" == "tag" ]]; then
+            echo "value=${GITHUB_REF_NAME}" >> "$GITHUB_OUTPUT"
+          else
+            echo "value=${GITHUB_SHA::7}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Prepare package
+        shell: bash
+        run: |
+          set -euo pipefail
+          package_root="dist/SmartWallLights"
+          mkdir -p "$package_root"
+          cp -R About "$package_root/"
+          cp -R 1.6 "$package_root/"
+          cp README.md "$package_root/"
+          find "$package_root" -type d -name obj -prune -exec rm -rf {} +
+          find "$package_root" -type f \( -name "*.pdb" -o -name "WorkshopDescription.txt" \) -delete
+
+      - name: Create zip
+        shell: bash
+        run: |
+          cd dist
+          zip -r "SmartWallLights-${{ steps.version.outputs.value }}.zip" SmartWallLights
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: SmartWallLights-${{ steps.version.outputs.value }}
+          path: dist/SmartWallLights-${{ steps.version.outputs.value }}.zip
+
+      - name: Create GitHub Release
+        if: github.ref_type == 'tag'
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/SmartWallLights-${{ steps.version.outputs.value }}.zip

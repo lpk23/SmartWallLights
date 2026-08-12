@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SmartWallLights.DesignatorLabel>Авторасстановка настенных ламп</SmartWallLights.DesignatorLabel>
+  <SmartWallLights.DesignatorDesc>Кликните внутри закрытой комнаты, чтобы разместить набор планов настенных светильников вдоль стен. Также можно зажать Shift при установке поддерживаемого настенного светильника на стену комнаты.</SmartWallLights.DesignatorDesc>
+  <SmartWallLights.NoWallLampDef>SmartWallLights не смог найти поддерживаемое определение настенного светильника.</SmartWallLights.NoWallLampDef>
+  <SmartWallLights.NoRoom>Кликните внутри закрытой комнаты.</SmartWallLights.NoRoom>
+  <SmartWallLights.RoomTooSmall>Эта комната слишком мала для автоматической расстановки настенных ламп.</SmartWallLights.RoomTooSmall>
+  <SmartWallLights.NoCandidates>В этой комнате не найдено подходящих мест на стенах для настенных светильников.</SmartWallLights.NoCandidates>
+  <SmartWallLights.NothingToPlace>Похоже, эта комната уже покрыта настенными светильниками.</SmartWallLights.NothingToPlace>
+  <SmartWallLights.Placed>Размещено настенных светильников: {0}.</SmartWallLights.Placed>
+  <SmartWallLights.Partial>Размещено настенных светильников: {0}, но не удалось покрыть клеток комнаты: {1}.</SmartWallLights.Partial>
+  <SmartWallLights.Settings.Mode>Режим расстановки</SmartWallLights.Settings.Mode>
+  <SmartWallLights.Settings.ModeEfficient>Эффективный: сбалансированное покрытие по сегментам стен</SmartWallLights.Settings.ModeEfficient>
+  <SmartWallLights.Settings.ModeFullSymmetry>Полная симметрия: лампы противоположных стен смотрят друг на друга</SmartWallLights.Settings.ModeFullSymmetry>
+  <SmartWallLights.Settings.ModeHybrid>Гибридный: сначала симметричные пары, потом эффективный добор темных зон</SmartWallLights.Settings.ModeHybrid>
+  <SmartWallLights.Settings.DoorAvoidance>Отступ от дверей: {0} кл.</SmartWallLights.Settings.DoorAvoidance>
+  <SmartWallLights.Settings.MinSpacing>Минимальная дистанция между лампами: {0} кл.</SmartWallLights.Settings.MinSpacing>
+  <SmartWallLights.Settings.DebugLogging>Писать отладочные логи</SmartWallLights.Settings.DebugLogging>
+  <SmartWallLights.Settings.Reset>Сбросить настройки</SmartWallLights.Settings.Reset>
+</LanguageData>
